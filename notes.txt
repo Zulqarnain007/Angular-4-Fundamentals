@@ -1,0 +1,139 @@
+Connect to VDI using following steps
+====================================
+Open browser and connect to https://rds.mastek.com/rdweb
+
+Login using Mastek Domain Credentials
+
+Click on the Angular VDI Machine to download and connect to remote VDI
+
+\\172.16.202.55\LnDTechnical\Static\JavaSoftware\UI\Angular
+
+Setup an Angular Application
+1. Setup the Angular CLI : npm 
+2. Setup the Angular modules and dependencies : npm-cache 
+3. Copy to C:/Users/<UserProfile>/AppData/Roaming 
+	npm
+	npm-cache
+4. Open the Angular App Folder in IDE
+
+	OR
+
+Install using following Commands
+1. install Angular CLI
+npm install -g @angular/cli
+
+2. Create new Angular
+ng new my-project-name
+
+Understanding Application Structure
+a. Identify the nodejs config File for the App
+	i. package.json : read the package config of our application
+b. Understanding Angular App
+	a. startup Module: main.ts
+	b. <module> folder eg: app
+		i. <module-name>.module.ts: module config file
+		ii. @NgModule
+			declarations: declare the code units
+			component,service,pipe,directive
+			imports: refer the exisiting modules to be used in app
+			providers: declare the services to be started on startup
+			bootstrap: startup components for current module
+		iii.@Component
+			selector: the pattern to inject the html template in DOM
+			templateURL: path of the HTML Template for the component
+			styleURLs:refer to stylesheets required for the template
+c. Implementing Application Components
+	a. Create a new Component
+		ng generate component <name>
+		.ts,.html,.css.,spec.ts
+	b. Class structure
+		constructor, data variable usage <variable>:datatype
+		using interface for complex data structure eg: Project
+	c. HTML Template usage
+		a. accessing the data members using {{variable}}
+		b. using tag directive *ngFor and *ngIf
+		c. associate events using (<event>) = "typescript fn"
+		d. data binding for input components
+			i. <input [(ngModel)] = "variable" >
+			ii. <input #<variable>>
+Provisioning Service using ExpressJS
+	npm install express
+	app.<httpMethod>(url,(req,res){})
+	mysql.connect,end,query(sql,params,success callback)
+Usage of Services
+	a. Create a new Service
+	b. Use Http Class to connect to Service using http Get method
+	c. Use json() for mapping the results
+	d. subscribe(res=>{response processing logic}) in component
+Usage of Router
+	Create and define the router module
+	routes={path:'/about',component:AboutComponent}
+	Declare the module in app.module.ts
+	Use the router: routerLink and <router-outlet>
+Usage of Pipes
+	Modifiers for String: uppercase,lowercase,currency
+	Modifiers for Array: slice:start[:end]
+	ng generate pipe <pipename> 
+	transform(value,args):string
+Usage of Directives
+	creating a custom directive: ng generate directive <name>
+	ElementRef access the exisiting element
+	@HostListener register event callbacks
+	@Input for input variable of directive
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

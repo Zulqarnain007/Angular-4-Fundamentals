@@ -1,0 +1,39 @@
+<h2> Employee Information </h2>
+<hr/>
+<table>
+  <tr>
+    <td>Employee No.</td>
+    <td *ngIf ="!isEditMode "> {{empNo}}</td>
+    <td *ngIf ="isEditMode "><input [(ngModel)] ="empNo"></td>
+    <td> <button (click) = "toggleEdit()"> Edit </button></td>
+  </tr>
+  <tr>
+    <td>Employee Name.</td>
+    <td> {{empName}}</td>
+  </tr>
+  <tr>
+    <td>department Name.</td>
+    <td> {{deptName}}</td>
+  </tr>
+</table>
+
+<h2> Project Details</h2>
+<hr/>
+<table>
+  <thead>
+    <tr>
+      <th> Number </th>
+      <th> Name </th>
+      <th> Location </th>
+    </tr>
+
+  </thead>
+  <tbody>
+    <tr *ngFor = "let p of projects; let i=index" >
+      <td> {{p.projId}}</td>
+      <td> {{p.projName}}</td>
+      <td> {{p.projLocation}}</td>
+
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,79 @@
+
+
+Openning Angular APP in VS Code.
+
+Open the folder which contains package.json
+================================================
+a> package.json: Config file for angular package.
+
+Angular Modules:
+----------------
+1> One package containing many angular module.
+2> to check for startup module open the main.ts
+    [plateformBrowserDynamic().BootstrapModule(AppModule)]
+3> Opne the <module-name>.module.ts available in <module> directory     e.g. app.ap.module.ts
+4> @NgModule config about applicaion module
+	Declarations: array of all component/directives / pipes created in this module.
+	Imports: refers the other inbuilt modules
+	Providers: list of angular services used in this module.
+	bootstrap: list of components  to be started on stratup.
+
+Angular Components:
+----------------------------
+1> one module contains many components.
+2> Open the<module-nam>.component.ts file. e.g. app.component.ts
+3> @Component config for each component.
+	Selector: the expression to inject component UI template.
+	template URL: path of HTML template for current component.
+	StyleUrls: Path to css stylesheets for current component.
+	Providers: List of angular  services used in the component.
+
+Single Page Application:
+-------------------------------
+1> index.html: to have slector of startup component.
+
+
+
+
+Run the Application:
+-----------------------------
+
+go to node js command prompt.: npm start
+============================================================
+
+Day 2
+=============================================================
+
+Employee Information
+
+Empno:
+Name:
+Department:
+
+Projects:
+
+number	name	location
+1001	admin	uk
+1002	main	us
+
+1. create the component				[x]
+2. identify the data members			[ x]
+3. display the data in html			[ ]
+4. Managing the events for user interaction.	[ ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
